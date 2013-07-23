@@ -1,0 +1,81 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+  
+         <Button
+            android:id="@+id/search"
+              android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="goToBuilding"
+         android:text="Buildings" />
+
+      
+  
+        <Button
+            android:id="@+id/search1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="goToFood"
+            android:text="Shops" />
+
+
+
+
+   
+
+        <Button
+            android:id="@+id/search3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+            android:onClick="goToRooms"
+             android:text="Rooms" />
+
+       
+ 
+ 
+
+
+        <Button
+            android:id="@+id/imageButton1"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+            android:onClick="goToHelp"
+            android:text="About" />
+  
+
+    <Button
+        android:id="@+id/button1"
+          android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+        android:onClick="goToQuestionnaire"
+        android:text="Questionnaire" />
+
+    <Button
+        android:id="@+id/button2"
+         android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+        android:text="Participant Information " 
+        android:onClick="goToInfoSheet"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+        android:text="Consent Form"
+         android:onClick="goToConsent" />
+
+</LinearLayout>

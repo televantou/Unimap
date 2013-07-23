@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eir.unimap"
+    android:versionCode="10"
+    android:versionName="1.8" >
+<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.eir.unimap.permission.MAPS_RECEIVE" />
+
+   <uses-sdk
+    android:minSdkVersion="8"/>
+
+    <permission
+        android:name="com.eir.unimap.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+  
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBP2fbKuoxBk5_bhHeNDZsmdYw4na2_RdI" />
+
+        <activity
+            android:name="com.eir.unimap.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.eir.unimap.About"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="com.eir.unimap.SearchFor" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.Building"
+            android:label="@string/title_activity_building"
+            android:parentActivityName="com.eir.unimap.SearchFor" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.Rooms"
+            android:label="@string/title_activity_rooms"
+            android:parentActivityName="com.eir.unimap.SearchFor" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.FoodDirections"
+            android:label="@string/title_activity_food"
+            android:parentActivityName="com.eir.unimap.SearchFor" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.ToiletDirections"
+            android:label="@string/title_activity_toilet"
+            android:parentActivityName="com.eir.unimap.SearchFor" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.Directions"
+            android:label="@string/title_activity_directions"
+             >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.RoomDirections"
+            android:label="@string/title_activity_room_directions"
+            android:parentActivityName="com.eir.unimap.Rooms" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.sparql.SparqlFood"
+            android:label="title_activity_sparql_eirs" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.sparql.SparqlRoom"
+            android:label="title_activity_sparql_room" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.sparql.SparqlDirectionsActivity"
+            android:label="@string/title_activity_sparql_directions" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.GMapV2Direction"
+            android:label="@string/title_activity_gmap_v2_direction" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.Food"
+            android:label="@string/title_activity_food" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.SpecificRoom"
+            android:label="@string/title_activity_specific_room" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.FileWrite"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.sparql.SparqlSpecificRoomActivity"
+            android:label="@string/title_activity_sparql_specific_room" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.SpecificFood"
+            android:label="@string/title_activity_specific_food" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.sparql.SparqlSpecificFood"
+            android:label="@string/title_activity_sparql_specific_food" >
+        </activity>
+
+       <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="com.eir.unimap.Question"
+            android:label="@string/title_activity_question" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.Sheet"
+            android:label="@string/title_activity_sheet" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.ConsentForm"
+            android:label="@string/title_activity_consent_form" >
+        </activity>
+        <activity
+            android:name="com.eir.unimap.GPSTracker"
+            android:label="@string/title_activity_gpstracker" >
+        </activity>
+           
+    </application>
+
+</manifest>
